@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "tutorialpress"
+version = "0.1.0"
+description = "Tutorial para capacitacao de novos membros de Fabrica de Software 2020, com Django, Django Rest Framework e Vue.JS"
+authors = ["Henrique Luiz Hartmann"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.0.3"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+flake8 = "^3.7.9"
+isort = "^4.3.21"
+pre-commit = "^2.1.1"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 119
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
