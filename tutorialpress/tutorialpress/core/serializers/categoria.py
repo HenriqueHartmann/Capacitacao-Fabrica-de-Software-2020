@@ -6,4 +6,4 @@ from tutorialpress.core.models import Categoria
 class CategoriaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Categoria
-        fields = ["nome"]
+        fields = ["id", "nome"]
